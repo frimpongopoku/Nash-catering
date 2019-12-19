@@ -9,7 +9,9 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
+        <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{asset('css/mdb.min.css')}}">
+        <link rel="stylesheet" href="{{asset('css/style.min.css')}}">
         <!-- Styles -->
         <style>
             html, body {
@@ -65,6 +67,8 @@
         </style>
     </head>
     <body>
+            <div id ="example"></div>
+            
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -92,4 +96,5 @@
             </div>
         </div>
     </body>
+    <script src="{{asset('js/app.js')}}"></script>
 </html>
